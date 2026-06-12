@@ -20,12 +20,12 @@ The premise: everyone learns the frameworks, **very few understand what's happen
 3. The **rendering engine** paints what you see on screen.
 4. It doesn't end there: the browser keeps the page **interactive** — reacting to clicks, typing, forms, animations.
 
-### 2. The three fundamental pieces (house analogy)
+### 2. The three fundamental pieces
 
 | Piece | Role | Analogy |
 |---|---|---|
-| **HTML** | Structure — top menu, sidebar, content area | The **blueprints** of the house |
-| **CSS** | Styles — how that structure should *look* (menu blue, content yellow). Separate from HTML so you can **reuse the same HTML with different styles** | The decoration |
+| **HTML** | Structure — top menu, sidebar, content area | The **blueprints** of the page |
+| **CSS** | Styles — how that structure should *look* (menu blue, content yellow). Separate from HTML so you can **reuse the same HTML with different styles** | How the structure should *look* (styles) |
 | **JavaScript** | Logic — reacts to user actions (click → open a form), timers, etc. | The **brain** controlling what happens in the house |
 
 ### 3. DOM vs. HTML (often confused)

@@ -60,7 +60,7 @@ The opposite problem: **lots of users writing** against your services and databa
 
 ### 4. Resilience: surviving the limit
 
-The goal: **resilient systems** that survive being hammered with traffic — no manual server restarts at 3 a.m., and users get *meaningful feedback* instead of a blank screen.
+The goal: **resilient systems** that survive being hammered with traffic — no manually logging into servers to restart them from scratch, and users get *meaningful feedback* instead of a blank screen.
 
 **Tool 1 — Timeouts:**
 - Scenario: service A calls service B, B is down, A has no timeout → A blocks forever waiting for a response that never comes → **now A is broken too** (cascading failure).
@@ -68,7 +68,7 @@ The goal: **resilient systems** that survive being hammered with traffic — no 
 
 **Tool 2 — Circuit Breakers (enabled by timeouts):**
 - If a service keeps timing out, hammering it with more requests doesn't help — maybe it ran out of RAM and **needs a breather**.
-- A circuit breaker detects **X consecutive failed requests** to a service and **stops calling it** ("short-circuits").
+- A circuit breaker detects **X failed requests** to a service and **stops calling it** ("short-circuits").
 - Benefits: the sick service stops receiving load and can recover; you can debug far more easily without thousands of failing requests in flight.
 
 ### 5. Final insight: scalability is per-feature, not per-system
@@ -120,3 +120,5 @@ The goal: **resilient systems** that survive being hammered with traffic — no 
 ---
 
 *Note: the video closes by recommending the presenter's architecture-patterns video (monolith → microservices → CQRS) — summarized in [backend-architecture-patterns-video-summary.md](backend-architecture-patterns-video-summary.md).*
+
+*Related summaries: [Real-World Systems: How They're Built and How They Fail](real-world-systems-video-summary.md) (these patterns applied to Twitter search and the Cloudflare/AWS outages).*

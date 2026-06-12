@@ -59,7 +59,7 @@ pending ──(Spec Author writes 3 files)──► spec_ready
    ⏸ HUMAN reviews & approves the spec files
 spec_ready ──(human flips state)──► in_progress
    Implementer works · human reviews the TESTS as they're written
-in_progress ──(Reviewer validates vs spec + runs init.sh)──► done
+in_progress ──(Implementer finishes tasks.md incl. final init.sh check; Reviewer validates vs spec + runs the tests)──► done
    memory → history.md changelog
 ```
 

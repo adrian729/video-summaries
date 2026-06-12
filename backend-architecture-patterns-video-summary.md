@@ -36,7 +36,7 @@ Simple (only three layers) but with very clear responsibilities — it has serve
 ### 3. Clean Architecture & Hexagonal Architecture
 
 - One step beyond layers: they help manage **dependencies** when projects grow complex — multiple databases, multiple external APIs, multiple transport layers (public API + CLI + desktop app).
-- **The criticism:** hexagonal architecture works best when **business requirements are defined up front** — which clashes with agile methodologies and fast prototyping. In the wrong context, these "purer" architectures slow you down and add boilerplate.
+- **The criticism** (echoed in plenty of internet posts — e.g., a 2022 article on when *not* to use hexagonal architecture): hexagonal architecture works best when **business requirements are defined up front** — which clashes with agile methodologies and fast prototyping. In the wrong context, these "purer" architectures slow you down and add boilerplate.
 - **Rule:** don't aim for the *purest* architecture — aim for the one **your team can actually maintain**.
 
 ### 4. The Modular Monolith (the sweet spot)
@@ -49,15 +49,16 @@ Simple (only three layers) but with very clear responsibilities — it has serve
 ### 5. Microservices (the hype machine)
 
 - Historically used as a **marketing word** ("our tech is scalable!") and even to attract investment.
-- Data point (O'Reilly article, 2020): many companies adopted microservices since ~2015, but a large share only had "a bit of success" — i.e., incomplete migrations or discovering they didn't solve their problems. Failures were mostly **not technical** — they came from team/context problems.
+- Data point (O'Reilly article, 2020): many companies adopted microservices since ~2015, and while a large group reported being mostly successful, over 37% reported only "a bit of success" — i.e., incomplete migrations or discovering they didn't solve their problems. Failures were mostly **not technical** — they came from team/context problems.
 - **The key question before migrating:** do your dev teams have a clear ownership of their domains/responsibilities? If not, microservices will hurt you.
 - Authority backup:
   - **Martin Fowler** (author of *Refactoring*): never *start* with microservices — start with a monolith, make it modular, split only when it's genuinely a problem ("Monolith First").
-  - **Sam Newman** (*Building Microservices*): decide based on **team size** — in a small team, microservices are high risk and the benefits (deploy speed, isolation) don't compensate the technical cost.
+  - **Sam Newman** (*Building Microservices*): decide based on **team size** — in a small team, microservices are high risk and the benefits (deploy speed, more safety/confidence when developing) don't compensate the technical cost.
 - The internet joke referenced: needing to traverse a chain of microservices ("Galactus") just to add a birthdate field to a user profile.
 
 ### 6. CQRS (Command Query Responsibility Segregation)
 
+- **Positioning:** presented as a step *beyond* microservices — for teams already in that phase who want to go further in segregating responsibilities and scaling — and a pattern well suited to **event-driven architectures**.
 - **What it is:** separating **commands** (writes/actions sent to the server) from **queries/responses** — enabling you to **queue requests** and listen for responses **asynchronously**. Often used with WebSockets: each command gets a unique ID; responses are matched back by that ID.
 - **When it shines:** very high ingest volume — e.g., recording user events (clicks, scrolls) on a web analytics platform.
 - **The cost:** development complexity (every command needs unique identification, async tracking). **Don't** use it where a simple synchronous HTTP request would do.
@@ -113,3 +114,5 @@ The video's step-by-step questions for picking an architecture:
 ---
 
 *Note: the presenter mentions a downloadable version of the decision algorithm in the video description, and a related video analyzing the Prime Video serverless→EC2 migration.*
+
+*Related summaries: [Monolith vs. Microservices](monolith-vs-microservices-video-summary.md) (Strangler Fig, the Prime Video case in depth)*

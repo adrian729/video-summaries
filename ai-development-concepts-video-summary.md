@@ -7,7 +7,7 @@
 
 ## 📋 Brief Summary
 
-A ground-up explainer of the **vocabulary of AI-assisted development**: what an LLM actually does (predict the next token), what tokens are, how neural networks + Transformers make it work, where the "knowledge" comes from (training), why models "get dumber" in long sessions (the context window), and how plain text-predictors became **agents** that execute tasks — plus the two ecosystem building blocks, **skills and MCPs**. The goal is a mental map of the whole AI-for-development ecosystem rather than a tutorial for any specific tool.
+A ground-up explainer of the **vocabulary of AI-assisted development**: what an LLM actually does (predict the next token), what tokens are, how neural networks + Transformers make it work, where the "knowledge" comes from (training), why models "get dumber" in long sessions (the context window), and how plain text-predictors became **agents** that execute tasks — plus two of the best-known ecosystem concepts, **skills and MCPs**. The goal is a mental map of the whole AI-for-development ecosystem rather than a tutorial for any specific tool.
 
 ---
 
@@ -21,12 +21,13 @@ A ground-up explainer of the **vocabulary of AI-assisted development**: what an 
 ### 2. Tokens
 
 - The **minimum processing unit** of an LLM — and the unit you *pay* in.
-- Roughly ≈ one word, but not always: a word can split into several tokens (the video shows "suscríbete" = 4 tokens in OpenAI's *Tokenizer* tool).
+- Roughly ≈ one word, but not always: a word can split into several tokens (the video shows it in OpenAI's *Tokenizer* tool: "la capital de Francia" = 5 tokens, one per word — but "suscríbete" alone = 4 tokens).
 - Internally tokens are **numbers (token IDs)** — these models are mathematics; text must be translated to numbers first.
 
 ### 3. Neural networks → Transformers
 
 - A **neural network** is a math model inspired by brain neurons: input layer → computation layers → prediction. Classic uses: handwriting recognition (OCR), classification.
+- The video demos an interactive NN playground (link in the description): load spiral data, press play, and watch the network learn **colored decision regions** — a new point landing in the blue zone gets classified blue, in the orange zone orange.
 - **Limitation:** long-distance relations in language. In "the cat didn't cross the street because it was tired", *cat* and *tired* are far apart — classic networks struggled to link them (early GPTs produced grammatical nonsense).
 - **2017, Google's "Attention Is All You Need" paper → the Transformer architecture:** assigns a **weight to the relation of every token with every other token** (cansado↔gato: 65%). Networks "vitaminized" with Transformers see whole sentences and their internal relevance — the key to coherent generation.
 - (Recommended deep-dive: 3Blue1Brown's visual videos on the topic.)
@@ -56,7 +57,7 @@ A ground-up explainer of the **vocabulary of AI-assisted development**: what an 
 
 ### 7. Skills and MCPs
 
-The two ecosystem concepts for organizing agent capabilities:
+Two of the best-known ecosystem concepts for organizing agent capabilities:
 
 - **Skill** = a *capability* you give the agent (search the web, query a DB, get the weather) — knowledge packaged so the model **pulls it into context dynamically, only when needed**, instead of bloating every prompt. (Helps context management: why carry DB instructions if you'll never call the DB?) In Claude Code: `/skills`, stored in a folder.
 - **MCP (Model Context Protocol)** = the **standard** for connecting AIs to traditional software tools — the same role REST/GraphQL play for web APIs. The skill explains *how*; the MCP provides *the door*. In Claude Code: `/mcp` (e.g., Gmail, Google Calendar servers).

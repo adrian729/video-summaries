@@ -1,7 +1,7 @@
 # Harness Engineering — Video Summary & Mini-Lesson
 
 > **Video:** [What is Harness Engineering?](https://www.youtube.com/watch?v=q9Vaoz0hd0U) — BettaTech
-> *(Part 1 of the channel's harness series)*
+> *(The channel follows up with a related video on Spec Driven Development)*
 
 ---
 
@@ -111,4 +111,4 @@ Nothing magic — start small and understand each piece:
 
 ---
 
-*Related summaries: [ai-development-concepts-video-summary.md](ai-development-concepts-video-summary.md) (the LLM/context/agent fundamentals this builds on) · [claude-code-sdd-harness-video-summary.md](claude-code-sdd-harness-video-summary.md) (part 2: a harness for the SDD workflow) · [uncle-bob-agent-system-video-summary.md](uncle-bob-agent-system-video-summary.md) (another concrete harness: Uncle Bob's flow).*
+*Related summaries: [ai-development-concepts-video-summary.md](ai-development-concepts-video-summary.md) (the LLM/context/agent fundamentals this builds on) · [claude-code-sdd-harness-video-summary.md](claude-code-sdd-harness-video-summary.md) (the follow-up SDD-harness video) · [uncle-bob-agent-system-video-summary.md](uncle-bob-agent-system-video-summary.md) (another concrete harness: Uncle Bob's flow).*

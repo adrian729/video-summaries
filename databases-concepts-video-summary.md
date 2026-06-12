@@ -43,7 +43,7 @@ Important nuance: NoSQL means *not only SQL*, and using SQL doesn't make a datab
 
 ### 5. Scaling: vertical vs. horizontal
 
-What happens when 1,000 rows become 1,000 million?
+What happens when 1,000 rows become millions?
 
 - **Vertical scaling:** give the machine more CPU/RAM. Often necessary for relational DBs, whose horizontal scaling is limited.
 - **Horizontal scaling:** instead of growing one machine, **spawn an army of servers** with the data spread across them. Easier in less-structured DBs (document, key-value) thanks to **sharding**.
@@ -79,7 +79,7 @@ Result: a fully normalized database — no repeated information, much easier con
 
 **…and when to do the opposite:** outside the relational world, **denormalization** can be the right call — e.g., in **DynamoDB** it's sometimes preferable to keep duplicated data to make queries much faster.
 
-> Book recommendation from the video: *Fundamentals of Database Design* (used in many university courses).
+> Book recommendation from the video: a *Fundamentals of Database…* textbook used in many university courses — likely *Fundamentals of Database Systems* (Elmasri & Navathe), though the auto-captions render the title as "Fundamentals of Database Design."
 
 ### 9. The mindset shift
 

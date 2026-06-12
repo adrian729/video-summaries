@@ -36,7 +36,7 @@ A pillar of DevOps: deployments and checks must not depend on a human (you'll ru
 
 ### 4. Infrastructure as Code (IaC)
 
-- Instead of manually clicking around your cloud provider to create servers, **define infrastructure as code** (Terraform, or general languages like TypeScript/Go via CDK-style tools).
+- Instead of manually clicking around your cloud provider to create servers, **define infrastructure as code** (Terraform, or general languages like TypeScript/Go).
 - Benefits: automated, repeatable deployments; **infrastructure is even testable**; the pipeline itself creates the server/DB/whatever is needed — zero manual steps.
 
 ### 5. Shift Left
@@ -133,4 +133,4 @@ From the (free online) book *Site Reliability Engineering*:
 
 ---
 
-*Related summaries: [backend-development-concepts-video-summary.md](backend-development-concepts-video-summary.md) (observability intro) · [system-design-thinking-video-summary.md](system-design-thinking-video-summary.md) (resilience: timeouts, circuit breakers).*
+*Related summaries: [backend-development-concepts-video-summary.md](backend-development-concepts-video-summary.md) (observability intro) · [system-design-thinking-video-summary.md](system-design-thinking-video-summary.md) (resilience: timeouts, circuit breakers) · [continuous-deployment-video-summary.md](continuous-deployment-video-summary.md) (delta: feature flags, trunk-based dev, deploy ≠ release).*

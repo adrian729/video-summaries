@@ -18,18 +18,19 @@ Robert C. Martin (Uncle Bob, author of *Clean Code*) has been publicly sharing h
 ### Uncle Bob's pipeline
 
 ```
- hand-written SPEC ──AI──► HARD SPEC ──AI──► GHERKIN ──AI──► TDD ──► JUDGE ──► MUTATION TESTING
-        (human)        ⏸ human review    ⏸ human review   (red→green→     (architecture     (inject bugs →
-                                                            refactor)       review)           surviving tests?)
-                                                                  ▲────────── handoff if gaps found ──────────┘
+ hand-written SPEC ──AI──► HARD SPEC ──AI──► GHERKIN ──AI──► TDD ──► ARCHITECTURE / "JUDGE"
+        (human)        ⏸ human review    ⏸ human review   (red→green→   (extreme code review —
+                                                            refactor)    this is where MUTATION
+                                                                  ▲      TESTING is applied:
+                                                                  │      inject bugs → surviving tests?)
+                                                                  └── handoff if gaps found ──┘
 ```
 
 1. **Spec (by hand):** Uncle Bob writes the initial specification **mostly manually**.
 2. **Hard spec (AI):** an agent *expands* it — many more cases and problem scenarios defined. ⏸ **Human reviews** (this is not a 100% automated flow).
 3. **Gherkin (AI):** the hard spec is formalized in **Gherkin** — `Feature` + scenarios, each with an ID (S1, S2…) and **Given / When / Then / And** structure. A standardized, formal requirements format (one of many — cf. EARS in the SDD video). ⏸ **Human reviews** again.
 4. **Implementation via TDD (AI):** no code straight away — tests are written **directly from the Gherkin** (each scenario is already formally defined). Classic TDD: red → green → refactor.
-5. **Architecture / "Judge" (AI):** Uncle Bob calls it the architecture stage; the presenter frames it as an extreme code review.
-6. **Mutation testing (AI):** the star of the show — see below.
+5. **Architecture / "Judge" (AI):** Uncle Bob calls it the architecture stage; the presenter frames it as an extreme code review — and in the post **this is the stage where mutation testing is applied** (the star of the show — see below). Splitting it into separate *Judge* and *Mutation Tester* agents is the presenter's implementation choice, not Uncle Bob's flow.
 
 ### Mutation testing 🧬 (the rarely-seen stage)
 
@@ -62,7 +63,7 @@ Robert C. Martin (Uncle Bob, author of *Clean Code*) has been publicly sharing h
 ## 🧪 The Demo (in brief)
 
 - Feature: a `--since` date-filter command for a small Python notes CLI (same repo as the SDD video).
-- One prompt ("implement feature cli-since") drives: init checks → Spec Partner asks **design questions** ("validate real dates or just the pattern?", "day-level or exact timestamp?") → Gherkin with 9 scenarios → human approval gate → TDD cycle by cycle → Judge approves → Mutation Tester finds 4 survivors, all out of the feature's scope → handoff confirms OK → history updated, session closed. **~8 minutes** total on this small project.
+- One prompt ("implement feature cli-since") drives: init checks → the lead surfaces the Spec Partner's **design questions** up front, via Claude's own ask-user tools ("validate real dates or just the pattern?", "day-level or exact timestamp?") — the Spec Partner subagent then sees the decisions are already recorded and moves straight on → Gherkin with 9 scenarios → human approval gate → TDD cycle by cycle → Judge approves → Mutation Tester finds 4 survivors, all out of the feature's scope → handoff confirms OK → history updated, session closed. **~8 minutes** total on this small project.
 - Presenter's honest caveats:
   - This flow suits developers who **review as the AI goes** (he reviews every test) — it's *not* a "leave it running 20 hours" flow.
   - ⚠️ **Token cost:** multi-agent flows reduce per-agent context but multiply total AI work — "they can be a token eater."
