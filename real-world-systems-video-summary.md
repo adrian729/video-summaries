@@ -159,4 +159,4 @@ The AWS failure, unlike Cloudflare's, already had a **detailed postmortem**, whi
 
 ---
 
-*Related summaries: [System Design Thinking](system-design-thinking-video-summary.md), [DevOps Concepts](devops-concepts-video-summary.md)*
+*Related summaries: [System Design Thinking](system-design-thinking-video-summary.md), [DevOps Concepts](devops-concepts-video-summary.md), [Building Atlassian's Edge Platform](atlassian-edge-platform-video-summary.md) (a first-person account of building exactly this kind of proxy/edge infrastructure)*

@@ -133,4 +133,4 @@ From the (free online) book *Site Reliability Engineering*:
 
 ---
 
-*Related summaries: [backend-development-concepts-video-summary.md](backend-development-concepts-video-summary.md) (observability intro) · [system-design-thinking-video-summary.md](system-design-thinking-video-summary.md) (resilience: timeouts, circuit breakers) · [continuous-deployment-video-summary.md](continuous-deployment-video-summary.md) (delta: feature flags, trunk-based dev, deploy ≠ release).*
+*Related summaries: [backend-development-concepts-video-summary.md](backend-development-concepts-video-summary.md) (observability intro) · [system-design-thinking-video-summary.md](system-design-thinking-video-summary.md) (resilience: timeouts, circuit breakers) · [continuous-deployment-video-summary.md](continuous-deployment-video-summary.md) (delta: feature flags, trunk-based dev, deploy ≠ release) · [atlassian-edge-platform-video-summary.md](atlassian-edge-platform-video-summary.md) (IaC, image pipelines and on-call lessons applied for real at Atlassian).*
