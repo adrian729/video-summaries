@@ -66,10 +66,9 @@ Pick a thread and follow the files in order:
 | **Design Patterns** ([▶ 1](https://www.youtube.com/watch?v=xtaqMX0OvH0) · [▶ 2](https://www.youtube.com/watch?v=rqOaZf4xMlI))<br>`design-patterns-video-summary.md` | 12 Gang-of-Four patterns across the creational, structural, and behavioral families |
 | **Testing & Correctness** ([▶ 1](https://www.youtube.com/watch?v=PQYeWODU8Lo) · [▶ 2](https://www.youtube.com/watch?v=K--Lmy8qUCQ))<br>`testing-and-correctness-video-summary.md` | Test design (error cases first, mock-free integration tests, the coverage trap) and type-driven design (making invalid states uncompilable) |
 
----
+## 🎚️ Audio & DSP
 
-## 📌 Also in this repo
-
-| File | What it is |
+| File | What you'll learn |
 |---|---|
-| **Audio DSP & Modern C++ Engineering Roadmap**<br>`learning-dsp-and-cpp.md` | An original (non-video) 5-phase learning path: foundations, object lifetimes/filters, real-time architecture, lock-free concurrency, hardware optimization |
+| **Audio DSP & Modern C++ Engineering Roadmap**<br>`learning-dsp-and-cpp.md` | *(roadmap — no video)* An original 5-phase learning path: foundations & the DFT, object lifetimes/filters, real-time architecture, lock-free concurrency, hardware optimization (SIMD) |
+| **The Golden Rules of Audio Programming** ([▶](https://www.youtube.com/watch?v=SJXGSJ6Zoro))<br>`realtime-audio-programming-video-summary.md` | Pete Goodliffe's four rules for the real-time audio thread: stay in CPU budget; never do work of unknown duration (no malloc/locks/logging/disk/OS calls); respect threads (data tearing, atomic pointer swaps); know float vs. fixed-point — *jitter, not average speed, is the killer* |

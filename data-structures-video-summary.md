@@ -156,4 +156,4 @@ The same lesson, beyond hashes: technologies that look like "black magic" are da
 
 ---
 
-*Related summaries: [databases-concepts-video-summary.md](databases-concepts-video-summary.md) (indexes as B-trees, key-value/hash access, choosing per access pattern) · [backend-development-concepts-video-summary.md](backend-development-concepts-video-summary.md) (where these structures meet real backend systems).*
+*Related summaries: [databases-concepts-video-summary.md](databases-concepts-video-summary.md) (indexes as B-trees, key-value/hash access, choosing per access pattern) · [backend-development-concepts-video-summary.md](backend-development-concepts-video-summary.md) (where these structures meet real backend systems) · [realtime-audio-programming-video-summary.md](realtime-audio-programming-video-summary.md) (why `std::vector` reallocation and worst-case complexity are lethal on a real-time thread).*

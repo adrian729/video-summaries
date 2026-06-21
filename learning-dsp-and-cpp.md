@@ -134,3 +134,7 @@
 | **DSP Domain**   | Offline file analysis (Python)             | Real-time block processing, vectorization (SIMD)                 |
 | **Architecture** | Modifying sound directly in the GUI thread | Decoupled SPSC queue pipelines between audio and game            |
 | **Game Audio**   | Triggering static `.wav` files via code    | High-performance analysis nodes driving procedural runtime audio |
+
+---
+
+*Related summaries: [realtime-audio-programming-video-summary.md](realtime-audio-programming-video-summary.md) — Pete Goodliffe's "Golden Rules of Audio Programming" is the canonical source for this roadmap's Phase 3 (hard real-time constraints) and Phase 4 (lock-free SPSC concurrency).*
