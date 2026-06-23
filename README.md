@@ -70,5 +70,4 @@ Pick a thread and follow the files in order:
 
 | File | What you'll learn |
 |---|---|
-| **Audio DSP & Modern C++ Engineering Roadmap**<br>`learning-dsp-and-cpp.md` | *(roadmap — no video)* An original 5-phase learning path: foundations & the DFT, object lifetimes/filters, real-time architecture, lock-free concurrency, hardware optimization (SIMD) |
 | **The Golden Rules of Audio Programming** ([▶](https://www.youtube.com/watch?v=SJXGSJ6Zoro))<br>`realtime-audio-programming-video-summary.md` | Pete Goodliffe's four rules for the real-time audio thread: stay in CPU budget; never do work of unknown duration (no malloc/locks/logging/disk/OS calls); respect threads (data tearing, atomic pointer swaps); know float vs. fixed-point — *jitter, not average speed, is the killer* |

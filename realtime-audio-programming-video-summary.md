@@ -158,4 +158,4 @@ The forbidden list — anything that runs in *unbounded* or *unknown* time:
 
 ---
 
-*Related summaries: [learning-dsp-and-cpp.md](learning-dsp-and-cpp.md) — this talk is the canonical source for that roadmap's Phase 3 "hard real-time constraints" and Phase 4 "lock-free SPSC concurrency"; [data-structures-video-summary.md](data-structures-video-summary.md) — why `std::vector` reallocation and worst-case complexity matter; [testing-and-correctness-video-summary.md](testing-and-correctness-video-summary.md) — instrumentation and measuring as a discipline.*
+*Related summaries: [data-structures-video-summary.md](data-structures-video-summary.md) — why `std::vector` reallocation and worst-case complexity matter; [testing-and-correctness-video-summary.md](testing-and-correctness-video-summary.md) — instrumentation and measuring as a discipline.*
