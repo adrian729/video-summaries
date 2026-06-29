@@ -11,7 +11,7 @@ English mini-lessons. Each summary follows the same shape: **📋 Brief Summary 
 Pick a thread and follow the files in order:
 
 1. **CS foundations** — `programming-paradigms-video-summary.md` → `data-structures-video-summary.md` → `p-vs-np-video-summary.md` → `design-patterns-video-summary.md` → `testing-and-correctness-video-summary.md`
-2. **Backend & systems** — `backend-development-concepts-video-summary.md` → `databases-concepts-video-summary.md` → `backend-architecture-patterns-video-summary.md` → `system-design-thinking-video-summary.md` → `monolith-vs-microservices-video-summary.md` → `real-world-systems-video-summary.md` → `atlassian-edge-platform-video-summary.md`
+2. **Backend & systems** — `backend-development-concepts-video-summary.md` → `databases-concepts-video-summary.md` → `backend-architecture-patterns-video-summary.md` → `system-design-thinking-video-summary.md` → `scaling-evolution-video-summary.md` → `monolith-vs-microservices-video-summary.md` → `real-world-systems-video-summary.md` → `atlassian-edge-platform-video-summary.md`
 3. **AI-assisted development** — `ai-development-concepts-video-summary.md` → `harness-engineering-video-summary.md` → `claude-code-sdd-harness-video-summary.md` → `uncle-bob-agent-system-video-summary.md`
 4. **Shipping & operations** — `devops-concepts-video-summary.md` → `continuous-deployment-video-summary.md` → `real-world-systems-video-summary.md` (how systems fail)
 
@@ -33,6 +33,7 @@ Pick a thread and follow the files in order:
 | **Databases** ([▶](https://www.youtube.com/watch?v=xz1fJ7M2g-o))<br>`databases-concepts-video-summary.md` | Relational vs. NoSQL (document, key-value, graph); CAP theorem; ACID vs. BASE; indexes; normalization (3NF) |
 | **Backend Architecture Patterns** ([▶](https://www.youtube.com/watch?v=q3YQy1lJutw))<br>`backend-architecture-patterns-video-summary.md` | A decision algorithm for monolith, layered, clean, modular, microservices, CQRS, and serverless architectures |
 | **System Design Thinking** ([▶](https://www.youtube.com/watch?v=dbLQ_0Ivg4U))<br>`system-design-thinking-video-summary.md` | Start from access patterns: read-heavy (fan-out: CDNs, caches, replicas) vs. write-heavy (fan-in: queues, workers); resilience |
+| **Scaling Evolution: From Client-Server to Distributed Systems** ([▶](https://www.youtube.com/watch?v=2nEiIG-xca4))<br>`scaling-evolution-video-summary.md` | The step-by-step infra evolution: 3-tier → load balancers → stateless servers → caches → CDNs → queues/workers → observability, adding each piece only to solve a real problem |
 | **Monolith vs. Microservices** ([▶ 1](https://www.youtube.com/watch?v=aVL3AObcb9M) · [▶ 2](https://www.youtube.com/watch?v=RPEM2Kx5-JE))<br>`monolith-vs-microservices-video-summary.md` | Sam Newman's evolution patterns (Strangler Fig, DB decomposition) and the Amazon Prime Video cost case study |
 | **Real-World Systems: How They're Built and How They Fail** ([▶ 1](https://www.youtube.com/watch?v=zkSSoEpL7zU) · [▶ 2](https://www.youtube.com/watch?v=waHk1grLR5U))<br>`real-world-systems-video-summary.md` | Twitter's search infra (Elasticsearch, Kafka, read/write separation) and why the internet goes down (CDN/DNS centralization, cascading failure) |
 

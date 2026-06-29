@@ -121,4 +121,4 @@ The goal: **resilient systems** that survive being hammered with traffic — no 
 
 *Note: the video closes by recommending the presenter's architecture-patterns video (monolith → microservices → CQRS) — summarized in [backend-architecture-patterns-video-summary.md](backend-architecture-patterns-video-summary.md).*
 
-*Related summaries: [Real-World Systems: How They're Built and How They Fail](real-world-systems-video-summary.md) (these patterns applied to Twitter search and the Cloudflare/AWS outages).*
+*Related summaries: [Real-World Systems: How They're Built and How They Fail](real-world-systems-video-summary.md) (these patterns applied to Twitter search and the Cloudflare/AWS outages) · [Scaling Evolution: From Client-Server to Distributed Systems](scaling-evolution-video-summary.md) (the same BettaTech toolbox shown as a step-by-step infrastructure evolution).*
