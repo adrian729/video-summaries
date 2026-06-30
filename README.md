@@ -11,6 +11,7 @@ English mini-lessons. Each summary follows the same shape: **📋 Brief Summary 
 Pick a thread and follow the files in order:
 
 1. **CS foundations** — `programming-paradigms-video-summary.md` → `data-structures-video-summary.md` → `p-vs-np-video-summary.md` → `design-patterns-video-summary.md` → `testing-and-correctness-video-summary.md`
+5. **Functional design** — `programming-paradigms-video-summary.md` → `design-patterns-video-summary.md` → `functional-design-principles-video-summary.md` → `functional-design-patterns-video-summary.md` *(why/direction before how)*
 2. **Backend & systems** — `backend-development-concepts-video-summary.md` → `databases-concepts-video-summary.md` → `backend-architecture-patterns-video-summary.md` → `system-design-thinking-video-summary.md` → `scaling-evolution-video-summary.md` → `monolith-vs-microservices-video-summary.md` → `real-world-systems-video-summary.md` → `atlassian-edge-platform-video-summary.md`
 3. **AI-assisted development** — `ai-development-concepts-video-summary.md` → `harness-engineering-video-summary.md` → `claude-code-sdd-harness-video-summary.md` → `uncle-bob-agent-system-video-summary.md`
 4. **Shipping & operations** — `devops-concepts-video-summary.md` → `continuous-deployment-video-summary.md` → `real-world-systems-video-summary.md` (how systems fail)
@@ -50,6 +51,7 @@ Pick a thread and follow the files in order:
 | File | What you'll learn |
 |---|---|
 | **Frontend Development Concepts** ([▶](https://www.youtube.com/watch?v=Rla0IMxIlNc))<br>`frontend-development-concepts-video-summary.md` | Browser loading, DNS, HTML/CSS/JS, the DOM, the event loop (micro/macrotasks), state, the Virtual DOM, and rendering strategies (CSR/SSR/SSG) |
+| **How Clay's UI Layout Algorithm Works** ([▶](https://www.youtube.com/watch?v=by9lQvpvMIc))<br>`clay-ui-layout-algorithm-video-summary.md` | Building a flexbox-style layout engine from scratch: UI as a tree, why sizing must precede positioning, multi-pass fit/grow/shrink/wrap, and a standalone reproducible algorithm spec |
 
 ## 🤖 AI-Assisted Development
 
@@ -65,6 +67,8 @@ Pick a thread and follow the files in order:
 | File | What you'll learn |
 |---|---|
 | **Design Patterns** ([▶ 1](https://www.youtube.com/watch?v=xtaqMX0OvH0) · [▶ 2](https://www.youtube.com/watch?v=rqOaZf4xMlI))<br>`design-patterns-video-summary.md` | 12 Gang-of-Four patterns across the creational, structural, and behavioral families |
+| **Functional Design Patterns** ([▶](https://www.youtube.com/watch?v=Usr-yxvb9TY))<br>`functional-design-patterns-video-summary.md` | FP has its own patterns: idiom vs. pattern; architectural (Three Layer Cake, free monads, Service Handle/ReaderT/Final Tagless); type-level (HKD, type selectors); infrastructure (bracket/RAII, MVar request-response) |
+| **Functional Design Principles** ([▶](https://www.youtube.com/watch?v=SxCr-31kiDY))<br>`functional-design-principles-video-summary.md` | SOLID is universal, not OOP-specific — translated to FP — plus Divide & Conquer, Least Power, Least Knowledge, and the FP-flavored "make invalid states irrepresentable" and "mathematical nature" |
 | **Testing & Correctness** ([▶ 1](https://www.youtube.com/watch?v=PQYeWODU8Lo) · [▶ 2](https://www.youtube.com/watch?v=K--Lmy8qUCQ))<br>`testing-and-correctness-video-summary.md` | Test design (error cases first, mock-free integration tests, the coverage trap) and type-driven design (making invalid states uncompilable) |
 
 ## 🎚️ Audio & DSP

@@ -167,4 +167,4 @@ Two companion videos that together form **one catalogue of 12 design patterns** 
 
 ---
 
-*Related summaries: [Backend Architecture Patterns](backend-architecture-patterns-video-summary.md) · [testing-and-correctness-video-summary.md](testing-and-correctness-video-summary.md) (why Singleton's global access hurts testability).*
+*Related summaries: [Backend Architecture Patterns](backend-architecture-patterns-video-summary.md) · [testing-and-correctness-video-summary.md](testing-and-correctness-video-summary.md) (why Singleton's global access hurts testability) · [Functional Design Patterns](functional-design-patterns-video-summary.md) (the FP counterpoint — why most of these GoF patterns dissolve into functions, and which patterns FP has instead).*
