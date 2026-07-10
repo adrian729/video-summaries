@@ -71,8 +71,9 @@ Pick a thread and follow the files in order:
 | **Functional Design Principles** ([▶](https://www.youtube.com/watch?v=SxCr-31kiDY))<br>`functional-design-principles-video-summary.md` | SOLID is universal, not OOP-specific — translated to FP — plus Divide & Conquer, Least Power, Least Knowledge, and the FP-flavored "make invalid states irrepresentable" and "mathematical nature" |
 | **Testing & Correctness** ([▶ 1](https://www.youtube.com/watch?v=PQYeWODU8Lo) · [▶ 2](https://www.youtube.com/watch?v=K--Lmy8qUCQ))<br>`testing-and-correctness-video-summary.md` | Test design (error cases first, mock-free integration tests, the coverage trap) and type-driven design (making invalid states uncompilable) |
 
-## 🎚️ Audio & DSP
+## ⚡ Low-Latency & Real-Time Programming
 
 | File | What you'll learn |
 |---|---|
 | **The Golden Rules of Audio Programming** ([▶](https://www.youtube.com/watch?v=SJXGSJ6Zoro))<br>`realtime-audio-programming-video-summary.md` | Pete Goodliffe's four rules for the real-time audio thread: stay in CPU budget; never do work of unknown duration (no malloc/locks/logging/disk/OS calls); respect threads (data tearing, atomic pointer swaps); know float vs. fixed-point — *jitter, not average speed, is the killer* |
+| **What is Low Latency C++?** ([▶ 1](https://www.youtube.com/watch?v=EzmNeAhWqVs) · [▶ 2](https://www.youtube.com/watch?v=5uIsadq-nyk))<br>`low-latency-cpp-video-summary.md` | Cross-industry generalization (audio, gaming, HFT, embedded) of the same rules: latency vs. throughput vs. efficiency, deterministic-worst-case-over-average, cache-friendly data/algorithms, `[[assume]]`, and five real lock-free/wait-free algorithms (ring buffer, spin-on-write, RCU, double buffering, seqlock) for sharing data with a hot path |

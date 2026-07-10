@@ -158,4 +158,4 @@ The forbidden list — anything that runs in *unbounded* or *unknown* time:
 
 ---
 
-*Related summaries: [data-structures-video-summary.md](data-structures-video-summary.md) — why `std::vector` reallocation and worst-case complexity matter; [testing-and-correctness-video-summary.md](testing-and-correctness-video-summary.md) — instrumentation and measuring as a discipline.*
+*Related summaries: [data-structures-video-summary.md](data-structures-video-summary.md) — why `std::vector` reallocation and worst-case complexity matter; [testing-and-correctness-video-summary.md](testing-and-correctness-video-summary.md) — instrumentation and measuring as a discipline; [low-latency-cpp-video-summary.md](low-latency-cpp-video-summary.md) — the cross-industry generalization of these same rules, with the actual lock-free/wait-free algorithms (ring buffers, seqlocks, RCU) that satisfy them.*
