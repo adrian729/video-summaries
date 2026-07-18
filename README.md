@@ -13,7 +13,7 @@ Pick a thread and follow the files in order:
 1. **CS foundations** — `programming-paradigms-video-summary.md` → `data-structures-video-summary.md` → `p-vs-np-video-summary.md` → `design-patterns-video-summary.md` → `testing-and-correctness-video-summary.md`
 5. **Functional design** — `programming-paradigms-video-summary.md` → `design-patterns-video-summary.md` → `functional-design-principles-video-summary.md` → `functional-design-patterns-video-summary.md` *(why/direction before how)*
 2. **Backend & systems** — `backend-development-concepts-video-summary.md` → `databases-concepts-video-summary.md` → `backend-architecture-patterns-video-summary.md` → `system-design-thinking-video-summary.md` → `scaling-evolution-video-summary.md` → `monolith-vs-microservices-video-summary.md` → `real-world-systems-video-summary.md` → `atlassian-edge-platform-video-summary.md`
-3. **AI-assisted development** — `ai-development-concepts-video-summary.md` → `harness-engineering-video-summary.md` → `claude-code-sdd-harness-video-summary.md` → `uncle-bob-agent-system-video-summary.md`
+3. **AI-assisted development** — `practical-llm-usage-video-summary.md` → `ai-development-concepts-video-summary.md` → `harness-engineering-video-summary.md` → `claude-code-sdd-harness-video-summary.md` → `uncle-bob-agent-system-video-summary.md`
 4. **Shipping & operations** — `devops-concepts-video-summary.md` → `continuous-deployment-video-summary.md` → `real-world-systems-video-summary.md` (how systems fail)
 
 ---
@@ -57,6 +57,7 @@ Pick a thread and follow the files in order:
 
 | File | What you'll learn |
 |---|---|
+| **How I Use LLMs** ([▶](https://www.youtube.com/watch?v=EWvNQjAaOHw))<br>`practical-llm-usage-video-summary.md` | Karpathy's practical tour of the 2025 LLM app ecosystem: tokens, pretraining vs. post-training, context-window hygiene, picking a model/tier, thinking models, tool use (search, deep research, code interpreter, file upload), multimodality, memory & custom GPTs |
 | **AI Development Concepts** ([▶](https://www.youtube.com/watch?v=MgtM_Ktuc5A))<br>`ai-development-concepts-video-summary.md` | The vocabulary of AI-assisted dev: tokens, transformers, context windows, why models "get dumber," and agents, skills & MCPs |
 | **Harness Engineering** ([▶](https://www.youtube.com/watch?v=q9Vaoz0hd0U))<br>`harness-engineering-video-summary.md` | Building context/tools/memory/validation around LLMs; context degradation; the three pillars of harness architecture |
 | **Adapting Claude Code for Spec-Driven Development** ([▶](https://www.youtube.com/watch?v=ElGlTv2A_bM))<br>`claude-code-sdd-harness-video-summary.md` | A concrete SDD harness: spec pipeline (requirements → design → tasks), EARS notation, human-in-the-loop gates *(delta — read Harness Engineering first)* |

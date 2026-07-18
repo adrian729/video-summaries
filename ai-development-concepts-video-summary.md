@@ -105,4 +105,4 @@ Two of the best-known ecosystem concepts for organizing agent capabilities:
 
 ---
 
-*Related summaries: [harness-engineering-video-summary.md](harness-engineering-video-summary.md) (the discipline built on these concepts) · [claude-code-sdd-harness-video-summary.md](claude-code-sdd-harness-video-summary.md) (SDD, the methodology the video points to).*
+*Related summaries: [harness-engineering-video-summary.md](harness-engineering-video-summary.md) (the discipline built on these concepts) · [claude-code-sdd-harness-video-summary.md](claude-code-sdd-harness-video-summary.md) (SDD, the methodology the video points to) · [practical-llm-usage-video-summary.md](practical-llm-usage-video-summary.md) (shares the tokens/context-window fundamentals, applied to day-to-day LLM usage instead of dev tooling).*
